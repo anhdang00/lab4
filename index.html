@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<title>Volunteer Form</title>
-
+  <meta charset="UTF-8">
+  <title>Document</title>
 </head>
 <body>
 	<h1>Volunteer Form</h1>
-	<form method = "POST" action = "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+  	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
 		<fieldset>
-			<legend><strong>My Info</strong></legend>
-			<p><label> First Name: <input type="text" name="first_name_field"></label></p>
-			<p><label> Last Name: <input type="text" name="last_name_field"></label></p>
-			<p><label> Phone Number: <input type="tel" name="phone_field"></label></p>
-			<p><label> Email Address: <input type="email" name="email_field"></label></p>
+      		<legend>My Info</legend>
+			<p><label> First Name: <input size="100" type="text" name="first_name_field"></label></p>
+			<p><label> Last Name: <input size="100" type="text" name="last_name_field"></label></p>
+			<p><label> Phone Number: <input size="100" type="text" name="phone_field"></label></p>
+			<p><label> Email Address: <input size="100" type="text" name="email_field"></label></p>
+			<p>Gender: </p>
 			<p>
-				<label for="gender_field"> Gender: </label>
-				<lable> Male <input type="radio" name="gender_field" value="male"/></lable>
-				<lable> Female <input type="radio" name="gender_field" value="female"/></lable>
+        <label>Male <input type="radio" name="gender_field" value="male"></label>
+        <label>Female <input type="radio" name="gender_field" value="female"></label>
 			</p>
-			<p>
-				<label for="age_field"> Age: </label>
-				<select>
-					<optgroup>
-						<option>under 18</option>
-						<option>18 - 24</option>
-						<option>25 - 34</option>
-						<option>35 - 44</option>
-						<option>45 - 54</option>
-						<option>55 - 64</option>
-						<option>65 and over</option>
-					</optgroup>
-				</select>			
-			</p>
+      <p>Age: </p>
+      <select name="age_field">
+      				<option>under 18</option>
+					<option>18 - 24</option>
+					<option>25 - 34</option>
+					<option>35 - 44</option>
+					<option>45 - 54</option>
+					<option>55 - 64</option>
+					<option>65 and over</option>
+			</select>			
 		</fieldset>
 
 		<fieldset>
 			<legend><strong>My Availability</strong></legend>
-			<p>
-			<label for="available_field[]"> Days Available: </label>
-			</p>
+			<h3>Days Available:</h3>
 			<p><label> Sunday <input type="checkbox" name="available_field" value="sunday"/></label></p>
 			<label> Monday <input type="checkbox" name="available_field" value="monday"/></label>
 			<p><label> Tuesday <input type="checkbox" name="available_field" value="tuesday"/></label></p>
@@ -48,7 +41,7 @@
 			<p><label> Friday <input type="checkbox" name="available_field" value="friday"/></label></p>
 			<p><label> Saturday <input type="checkbox" name="available_field" value="saturday"/></label></p>
 
-			<p><label for="comments_field"> Any Comments? </p>
+			 <h3>Comments</h3>
 			<textarea name="comments_field"></textarea></label>
 		</fieldset>
 
